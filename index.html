@@ -455,6 +455,35 @@
  
       <!--for form submition-->
       <script>
+        const d = new Date();
+        function screeDedirect(){
+
+          var now = new Date().getTime();
+          
+          var countDownDate = new Date("Oct 05, 2022 10:10:00").getTime();
+         
+          var distance = countDownDate - now;
+
+          var elements = document.getElementsByTagName('html');
+
+          //for screen changing
+				 var nowTime = new Date();
+				 
+			
+         console.log(distance);
+				 if (distance >= 0) {
+          setTimeout(function(){
+          elements[0].style.opacity = 1;
+          (function fade(){
+            var opacloader = parseFloat(elements[0].style.opacity);
+            (elements[0].style.opacity = opacloader - .1)<0.1?window.location.href='/countdown':setTimeout(fade,4)})();
+          },1);
+			}
+        setTimeout(screeDedirect, 1000 - d.getTime() % 1000 + 20); 
+        }
+        
+
+
         function onFormSubmit(){
 
           name = document.getElementsByName("name")[0].value;//get name 
@@ -472,6 +501,12 @@
           console.log(url);
           window.open(url);
         }
+
+        //window.location.replace('/inaug/timer.html');
+        screeDedirect();
+
+       
+        
 
       </script>
 
