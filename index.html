@@ -563,16 +563,17 @@
           //for screen changing
 				 var nowTime = new Date();
 				 
-			
+			/*
          console.log(distance);
 				 if (distance >= 0) {
           setTimeout(function(){
           elements[0].style.opacity = 1;
           (function fade(){
             var opacloader = parseFloat(elements[0].style.opacity);
-            //(elements[0].style.opacity = opacloader - .1)<0.1?window.location.href='/countdown':setTimeout(fade,4)})();
+            (elements[0].style.opacity = opacloader - .1)<0.1?window.location.href='/countdown':setTimeout(fade,4)})();
           },1);
 			}
+      */
         setTimeout(screeDedirect, 1000 - d.getTime() % 1000 + 20); 
         }
         
