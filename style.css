@@ -38286,8 +38286,9 @@ a.u-link.u-text-hover-grey-90:hover {
 }
 
 .u-footer .u-logo-image-1 {
-  width: 200%;
-  height: 100%;
+  width: auto;
+  height: 80px;
+  margin-top: 20px;
 }
 
 .u-footer .u-social-icons-1 {
@@ -38342,7 +38343,11 @@ a.u-link.u-text-hover-grey-90:hover {
 }
 @media (max-width: 575px) {
   .u-footer .u-image-1 {
-    margin-left: auto;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+  width: 50%;
   }
 
   .u-footer .u-text-1 {
