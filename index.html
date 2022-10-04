@@ -576,7 +576,8 @@
 
           var now = new Date().getTime();
           
-          var countDownDate = new Date("Oct 05, 2022 09:30:00").getTime();
+          //var countDownDate = new Date("Oct 05, 2022 09:30:00").getTime();
+          var countDownDate = new Date("Oct 05, 2022 01:00:00").getTime();
          
           var distance = countDownDate - now;
 
@@ -585,7 +586,7 @@
           //for screen changing
 				 var nowTime = new Date();
 				 
-			/*
+			
          console.log(distance);
 				 if (distance >= 0) {
           setTimeout(function(){
@@ -595,7 +596,7 @@
             (elements[0].style.opacity = opacloader - .1)<0.1?window.location.href='/countdown':setTimeout(fade,4)})();
           },1);
 			}
-      */
+    
         setTimeout(screeDedirect, 1000 - d.getTime() % 1000 + 20); 
         }
         
